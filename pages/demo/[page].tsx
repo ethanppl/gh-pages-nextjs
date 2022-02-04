@@ -22,7 +22,7 @@ const Page = () => {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>{page?.toString()}</h1>
-        {imgPath ? <img src={imgPath} alt={imgPath} width={'40%'}></img> : null}
+        {imgPath ? <img src={imgPath} alt={imgPath} className={styles.demoImg}></img> : null}
         <br />
       </main>
       <Footer />
