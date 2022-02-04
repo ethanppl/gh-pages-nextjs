@@ -1,14 +1,15 @@
 .container {
   padding: 0 2rem;
+  height: 100vh;
 }
 
 .main {
-  min-height: 100vh;
+  height: 85vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -16,9 +17,11 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
+  margin: auto;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  width: 75%;
 }
 
 .footer a {
@@ -40,7 +43,7 @@
 }
 
 .title {
-  margin: 0;
+  margin: 2rem 0;
   line-height: 1.15;
   font-size: 4rem;
 }
@@ -51,9 +54,20 @@
 }
 
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
+  margin: 1rem 0;
+  line-height: 1;
   font-size: 1.5rem;
+}
+
+.description a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.description a:hover,
+.description a:focus,
+.description a:active {
+  text-decoration: underline;
 }
 
 .code {
@@ -71,6 +85,7 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+  margin: 2rem 0;
 }
 
 .card {
