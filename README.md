@@ -1,12 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project template that can be exported as a static website and deploy on GitHub Pages.
+This template demonstrates how to display images, how to handle hyperlinks, and how to generate static pages for pages that use Next.js dynamic routing.
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
+yarn install
 yarn dev
 ```
 
@@ -14,21 +14,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Check out how dynamic routes are handled in `pages/demo/[page].tsx`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Use this as a template
 
-## Learn More
+Click "Use this template" on top. Remember to change the `repoName` to the name of your repository in [`next.config.js`](/next.config.js). Read more on [GitHub documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy on GitHub Pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This template set up a GitHub action that builds, exports and pushes to the `gh-pages` branch for publishing. Navigate to settings -> pages, and set the root folder in the `gh-pages` branch as the source. Read more about GitHub Pages on [GitHub documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
