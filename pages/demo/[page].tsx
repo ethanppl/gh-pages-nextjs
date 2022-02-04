@@ -9,10 +9,12 @@ const Page = () => {
   let imgPath = undefined;
   switch (page) {
     case 'cat':
-      imgPath = '/cat.jpg';
+      // always try to use relative path
+      imgPath = '../cat.jpg';
       break;
     case 'dog':
-      imgPath = '/dog.jpeg';
+      // always try to use relative path
+      imgPath = '../dog.jpeg';
       break;
   }
 
@@ -28,4 +30,18 @@ const Page = () => {
   );
 };
 
+// we need this function to generate a static site
+export async function getStaticPaths() {
+  return {
+    paths: [{ params: { page: 'cat' } }, { params: { page: 'dog' } }],
+    fallback: false, // fallback must be false for `next export`
+  };
+}
+
+// we need this function to generate a static site
+export async function getStaticProps() {
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+}
 export default Page;
