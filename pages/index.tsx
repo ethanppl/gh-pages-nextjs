@@ -18,8 +18,9 @@ const Home: NextPage = () => {
         </h1>
         <p className={styles.description}>
           <a href="https://github.com/ethanppl/gh-pages-nextjs">
-            https://github.com/ethanppl/gh-pages-nextjs
-          </a>
+            This is a Next.js project template with typescript
+          </a>{' '}
+          that can be exported as a static website.
         </p>
         <p className={styles.description}>
           Try using this as a{' '}
