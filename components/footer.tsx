@@ -4,14 +4,17 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Link href="/demo/cat" passHref>
-        CAT
-      </Link>
       <Link href="/" passHref>
         HOME
       </Link>
+      <Link href="/about" passHref>
+        ABOUT
+      </Link>
+      <Link href="/demo/cat" passHref>
+        DEMO: CAT
+      </Link>
       <Link href="/demo/dog" passHref>
-        DOG
+        DEMO: DOG
       </Link>
     </footer>
   );
