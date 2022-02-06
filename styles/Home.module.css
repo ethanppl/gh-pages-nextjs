@@ -8,6 +8,28 @@
   justify-content: space-between;
 }
 
+.about {
+  padding: 0 2rem;
+  max-width: 50vw;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-justify: justify;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .about {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 .main {
   padding: 2rem 0;
   flex: 1;
@@ -60,7 +82,7 @@
 
 .description {
   margin: 1rem 0;
-  line-height: 1;
+  line-height: 1.25;
   font-size: 1.5rem;
 }
 

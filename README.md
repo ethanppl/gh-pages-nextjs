@@ -52,7 +52,9 @@ export async function getStaticProps() {
 
 ### Error: require() of ES modules is not supported. (code: 'ERR_REQUIRE_ESM')
 
-It will say something like the module is an ES module file as it is a .js file whose nearest parent package.json contains "type": "module" which defines all .js files in that package scope as ES modules. Instead rename index.js to end in .cjs, change the requiring code to use import(), or remove "type": "module" from the module package.json.
+It will say something like:
+
+> the module is an ES module file as it is a .js file whose nearest parent package.json contains "type": "module" which defines all .js files in that package scope as ES modules. Instead rename index.js to end in .cjs, change the requiring code to use import(), or remove "type": "module" from the module package.json.
 
 This happens because starting from Next.js version 12, Next.js follows the [JavaScript ecosystem transitions from CommonJS to ES modules](https://nextjs.org/blog/next-12#es-modules-support-and-url-imports). Importing ES modules are prioritized over CommonJS modules.
 
