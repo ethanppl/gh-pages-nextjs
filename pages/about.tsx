@@ -13,7 +13,7 @@ const Home: NextPage = () => {
             name="description"
             content="This is a Next.js template that can be exported as a static website and deployed on GitHub Pages."
           />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="./favicon.ico" />
         </Head>
 
         <main className={styles.main} style={{ alignItems: 'flex-start' }}>
